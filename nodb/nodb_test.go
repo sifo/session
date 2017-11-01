@@ -22,7 +22,7 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/macaron.v1"
 
-	"github.com/go-macaron/session"
+	"github.com/sifo/session"
 )
 
 func Test_LedisProvider(t *testing.T) {

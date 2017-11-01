@@ -25,7 +25,7 @@ import (
 	"github.com/siddontang/ledisdb/ledis"
 	"gopkg.in/ini.v1"
 
-	"github.com/go-macaron/session"
+	"github.com/sifo/session"
 )
 
 // LedisStore represents a ledis session store implementation.

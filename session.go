@@ -285,6 +285,11 @@ func (m *Manager) Read(sid string) (RawStore, error) {
 	return m.provider.Read(sid)
 }
 
+// Delete deletes session by session ID.
+func (m *Manager) Destroy(sid string) error {
+	return m.provider.Destory(sid)
+}
+
 // Destory deletes a session by given ID.
 func (m *Manager) Destory(ctx *macaron.Context) error {
 	sid := ctx.GetCookie(m.opt.CookieName)
